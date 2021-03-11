@@ -1,5 +1,5 @@
-baseurl: /tufte-jekyll
-title: Tufte-Jekyll
+baseurl: ''
+title: Electography
 subtitle: Content-centric blogging
 author: clay harmon
 simple_search: http://google.com/search
@@ -8,7 +8,7 @@ name: tufte
 markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 permalink: /articles/:short_year/:title
-timezone: America/New_York
+timezone: Europe/London
 excerpt_separator: <!--more-->  # you can specify your own separator, of course.
 exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'UploadToGithub.Rakefile', 'README.md']
 post:
