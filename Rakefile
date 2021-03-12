@@ -18,6 +18,7 @@ end
 desc "Generate and publish blog to gh-pages"
 task :publish => [:generate] do
   Dir.mktmpdir do |tmp|
+    system "git branch -D gh-pages"
     system "mv _site/* #{tmp}"
     system "git checkout -B gh-pages"
     system "rm -rf *"
