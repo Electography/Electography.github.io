@@ -5,7 +5,6 @@ require 'date'
 require 'yaml'
 require 'tmpdir'
 require 'jekyll'
-require 'shellwords'
 
 desc "Generate blog files"
 task :generate do

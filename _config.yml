@@ -1,13 +1,13 @@
 baseurl: ''
 title: Electography
-subtitle: Content-centric blogging
-author: clay harmon
+subtitle: Electoral Geography
+author: Samual Black
 simple_search: http://google.com/search
-description: A Jekyll theme for content-rich sites
+description: Posts about elections and geography
 name: tufte
 markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-permalink: /articles/:short_year/:title
+permalink: /articles/:year-:month-:day/:title
 timezone: Europe/London
 excerpt_separator: <!--more-->  # you can specify your own separator, of course.
 exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'UploadToGithub.Rakefile', 'README.md']
@@ -19,9 +19,4 @@ page:
   extension: md
 editor: gvim
 git:
-  branch: master
-transfer:
-  command: rsync
-  settings: -av
-  source: _site/
-  destination: ~/Git/clayh53.github.com/
+  branch: main
