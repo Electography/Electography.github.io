@@ -221,10 +221,12 @@ article { position: relative;
 section { padding-top: 1rem;
           padding-bottom: 1rem; }
 
-ul,ol { width: 45%;
-     -webkit-padding-start: 5%;
-     -webkit-padding-end: 5%;
-     list-style-type: none; }
+ul,ol {
+	width: 45%;
+	-webkit-padding-start: 5%;
+	-webkit-padding-end: 5%;
+	margin-left: 3em;
+}
 
 //li { padding: 0.5em 0; } //vertical padding on list items screws up vertical rhythym
 
@@ -438,7 +440,7 @@ li.listing h3.new {
   text-transform: uppercase;
   font-style: normal;
 }
-hr.slender {
+hr {
 	background: #2f2f2f;
     height: 3px;
     margin-top: 1.4rem;
@@ -447,7 +449,7 @@ hr.slender {
 	border: 0;
 }
 
-hr.slender::before {
+hr::before {
 	content: "⬢";
 	font-size: 3rem;
 	color: #2f2f2f;
