@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Blog - Electography</title>
+  <title>Page - Electography</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -52,7 +52,7 @@
   <link rel="stylesheet" type="text/css" href="/css/tufte.css">
   <!-- <link rel="stylesheet" type="text/css" href="/css/print.css" media="print"> -->
 
-  <link rel="canonical" href="/">
+  <link rel="canonical" href="/page/">
 
   <link rel="alternate" type="application/rss+xml" title="Electography" href="/feed.xml" />
 </head>
@@ -67,13 +67,13 @@
   	
 		
 		    
-		      <a class="active" href="/" class="active">Blog</a>
+		      <a href="/">Blog</a>
 		    
 	    
   	
 		
 		    
-		      <a href="/page/">Page</a>
+		      <a class="active" href="/page/" class="active">Page</a>
 		    
 	    
   	
@@ -93,32 +93,41 @@
   	
 	</nav>
 </header>
-    <article class="full-width">
-        <h1 class="content-listing-header">Articles</h1>
-  <ul class="content-listing ">
-          
-        <li class="listing">
-          <hr class="slender">
-          <a href="/articles/2021-03-17/local-government-in-england"><h3 class="contrast">Local Government in England</h3></a>
-          <br><span class="smaller">March 17, 2021</span>  <br/>
-          <div><p>Video on the systems of local government in England. Unlike Scotland, Wales, and Northern Ireland, English local government has much more variable layers and is more complicated and varied.</p>
+    <article class="group">
+      <h1>Page</h1>
+<p class="subtitle"></p>
 
-<p>Covering: levels of government, powers handled, how power is distributed for the authority, and the electoral systems.</p>
-</div> 
-        </li>
-          
-        <li class="listing">
-          <hr class="slender">
-          <a href="/articles/2021-03-15/elections-in-the-united-kingdom"><h3 class="contrast">Elections in the United Kingdom</h3></a>
-          <br><span class="smaller">March 15, 2021</span>  <br/>
-          <div><p><span class="newthought">Each level of government</span>  in the UK has a different electoral system. Here, each system will be looked at individually; covering the voting system and what effects this causes for the result.</p>
+<p><span class="newthought">In this first iteration</span>  of the <em>Tufte-Jekyll</em> theme, a post and a page have exactly the same layout. That means that all the typographic and structural details are identical between the two.</p>
 
-</div> 
-        </li>
-    
-  </ul>
+<h2 id="pages-and-posts">Pages and Posts</h2>
+
+<p>Jekyll provides for both pages and posts in its default configuration. I have left this as-is.</p>
+
+<h3 id="posts">Posts</h3>
+
+<p>Conceptually, posts are for recurring pieces of similar content such as might be found in a typical blog entry. Post content all sits in a folder named <code class="language-plaintext highlighter-rouge">_posts</code> and files are created in this folder<label for="1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="1" class="margin-toggle" /><span class="sidenote">Yes, a page has essentially the same old shit as a post </span> that are names with a date pre-pended to the title of the post. For instance <code class="language-plaintext highlighter-rouge">2105-02-20-this-is-a-post.md</code> is a perfectly valid post filename.</p>
+
+<p>Posts will always have a section above the content itself consisting of YAML front matter, which is meta-data information about the post. Minimally, a post title must always be present for it to be processed properly.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+Title: Some Title
+---
+## Content
+
+Markdown formatted content *here*.
+</code></pre></div></div>
+
+<h3 id="pages">Pages</h3>
+
+<p>Pages are any HTML documents <em>or</em> Markdown documents with YAML front matter that are then converted to content. Page material is more suited to static, non-recurring types of content. Like this</p>
+
+<p>I am not going to re-write the Jekyll documentation. Read it and you will figure out how the site is structured.</p>
+
+
+
+
     </article>
-    <span class="print-footer">Blog - Samual Black</span>
+    <span class="print-footer">Page - Samual Black</span>
     <footer>
   <hr class="slender">
   <ul class="footer-links">

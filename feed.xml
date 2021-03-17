@@ -1,31 +1,401 @@
----
-layout: null
-nav_exclude: true
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>Electography</title>
+    <description>Posts about elections and geography</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 17 Mar 2021 14:55:17 +0000</pubDate>
+    <lastBuildDate>Wed, 17 Mar 2021 14:55:17 +0000</lastBuildDate>
+    <generator>Jekyll v4.2.0</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>Local Government in England</title>
+        <description>&lt;p&gt;Video on the systems of local government in England. Unlike Scotland, Wales, and Northern Ireland, English local government has much more variable layers and is more complicated and varied.&lt;/p&gt;
+
+&lt;p&gt;Covering: levels of government, powers handled, how power is distributed for the authority, and the electoral systems.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;levels-of-government&quot;&gt;Levels of Government&lt;/h2&gt;
+
+&lt;p&gt;Starting off, the tiers of Government and how they fit together.&lt;/p&gt;
+
+&lt;p&gt;Firstly, County Councils are the top tier of a two-tier system, with district, city, or borough councils under them.&lt;/p&gt;
+
+&lt;figure&gt;&lt;img src=&quot;/assets/local-government-in-england/3-county-council.svg&quot; /&gt;&lt;figcaption class=&quot;maincolumn-figure&quot;&gt;The Nottinghamshire County Council sits over the seven district councils, sharing power between the two layers
+&lt;br /&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.nottinghamshire.gov.uk/council-and-democracy/council-structure/how-the-council-works &quot;&gt;Nottinghamshire County Council&lt;/a&gt;:
+&lt;a href=&quot;https://www.bassetlaw.gov.uk/council-and-democracy/local-councillors/your-local-councillor/ &quot;&gt;Bassetlaw District Council&lt;/a&gt;,
+&lt;a href=&quot;https://democracy.newark-sherwooddc.gov.uk/mgMemberIndex.aspx?bcr=1 &quot;&gt;Newark and Sherwood District Council&lt;/a&gt;,
+&lt;a href=&quot;https://democracy.rushcliffe.gov.uk/mgMemberIndex.aspx?bcr=1 &quot;&gt;Rushcliffe Borough Council&lt;/a&gt;,
+&lt;a href=&quot;https://democracy.broxtowe.gov.uk/mgMemberIndex.aspx?bcr=1 &quot;&gt;Broxtowe Borough Council&lt;/a&gt;,
+&lt;a href=&quot;https://democracy.ashfield-dc.gov.uk/mgMemberIndex.aspx?bcr=1 &quot;&gt;Ashfield District Council&lt;/a&gt;,
+&lt;a href=&quot;https://www.mansfield.gov.uk/councillors &quot;&gt;Mansfield District Council&lt;/a&gt;,
+&lt;a href=&quot;https://democracy.gedling.gov.uk/mgMemberIndex.aspx &quot;&gt;Gedling Borough Council&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;Similarly, the Greater London Authority sits on top of London Borough Councils and the City. However, this arrangement can be seen as similar to a Combined Authority because of the limited power of the GLA, coming later.&lt;/p&gt;
+
+&lt;figure&gt;&lt;img src=&quot;/assets/local-government-in-england/4-gla.svg&quot; /&gt;&lt;figcaption class=&quot;maincolumn-figure&quot;&gt;The Greater London Authority is similarly on top of each of the Borough Councils and City
+&lt;br /&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.london.gov.uk/people/mayoral/sadiq-khan &quot;&gt;Greater London Authority&lt;/a&gt;,
+&lt;a href=&quot;https://www.directory.londoncouncils.gov.uk/ &quot;&gt;London Boroughs&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;Unitary authorities are similar to the county and district model, but with all powers in a single council. These are a relatively new system, they can often be seen neighboring county councils but containing large cities.&lt;/p&gt;
+
+&lt;figure&gt;&lt;img src=&quot;/assets/local-government-in-england/5-unitary-authority.svg&quot; /&gt;&lt;figcaption class=&quot;maincolumn-figure&quot;&gt;Each of the three unitary authorities is part of a single tier, with no county or district above or below them
+&lt;br /&gt;&lt;br /&gt;
+&lt;a href=&quot;https://democracy.peterborough.gov.uk/mgMemberIndex.aspx?bcr=1 &quot;&gt;Peterborough City Council&lt;/a&gt;,
+&lt;a href=&quot;https://councillors.halton.gov.uk/mgMemberIndex.aspx?bcr=1 &quot;&gt;Halton Borough Council&lt;/a&gt;,
+&lt;a href=&quot;http://cmttpublic.cheshirewestandchester.gov.uk/mgMemberIndex.aspx?bcr=1 &quot;&gt;Cheshire West and Chester Council&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;Metropolitan districts used to be part of a two-tier system, with the Metropolitan County above the districts. However, the counties were abolished and now the districts have all the responsibilities as a unitary authority.&lt;/p&gt;
+
+&lt;figure&gt;&lt;img src=&quot;/assets/local-government-in-england/6-metro-district.svg&quot; /&gt;&lt;figcaption class=&quot;maincolumn-figure&quot;&gt;The Tyne and Wear Metropolitan County no longer exists, leaving the five metropolitan districts being de-facto unitary authorities
+&lt;br /&gt;&lt;br /&gt;
+&lt;a href=&quot;https://democracy.northtyneside.gov.uk/mgUserInfo.aspx?UID=170 &quot;&gt;North Tyneside Council&lt;/a&gt;,
+&lt;a href=&quot;https://www.newcastle.gov.uk/local-government/your-elected-representatives/local-councillors &quot;&gt;Newcastle City Council&lt;/a&gt;,
+&lt;a href=&quot;https://www.southtyneside.gov.uk/article/38350/Councillors-and-committees &quot;&gt;South Tyneside Council&lt;/a&gt;,
+&lt;a href=&quot;http://democracy.gateshead.gov.uk/mgMemberIndex.aspx?bcr=1 &quot;&gt;Gateshead Council&lt;/a&gt;,
+&lt;a href=&quot;https://committees.sunderland.gov.uk/committees/cmis5/Members/tabid/62/ScreenMode/Party/Default.aspx &quot;&gt;Sunderland City Council&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;These four systems are not as distinct in practice, as a combined authority can be created to cooperate between them.&lt;/p&gt;
+
+&lt;figure&gt;&lt;img src=&quot;/assets/local-government-in-england/7-combined-authority.svg&quot; /&gt;&lt;figcaption class=&quot;maincolumn-figure&quot;&gt;As seen before, the GLA is made up of London Boroughs, although it can be considered uniquely separate from other combined authorities&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;figure&gt;&lt;img src=&quot;/assets/local-government-in-england/8-combined-authority.svg&quot; /&gt;&lt;figcaption class=&quot;maincolumn-figure&quot;&gt;The Cambridgeshire and Peterborough Combined Authority is made up of a unitary authority and a county council, as well as its district councils
+&lt;br /&gt;&lt;br /&gt;
+&lt;a href=&quot;https://cambridgeshirepeterboroughcagov.cmis.uk.com/Members.aspx &quot;&gt;Cambridgeshire and Peterborough Combined Authority&lt;/a&gt;,
+&lt;a href=&quot;https://cambridgeshire.cmis.uk.com/ccc_live/Councillors/tabid/63/ScreenMode/Party/Default.aspx &quot;&gt;Cambridgeshire County Council&lt;/a&gt;,
+&lt;a href=&quot;https://www.fenland.gov.uk/localgov/mgMemberIndex.aspx?bcr=1 &quot;&gt;Fenland District Council&lt;/a&gt;,
+&lt;a href=&quot;https://www.eastcambs.gov.uk/council-and-democracy/search-for-councillors &quot;&gt;East Cambridgeshire District Council&lt;/a&gt;,
+&lt;a href=&quot;https://www.huntingdonshire.gov.uk/council-democracy/meetings-and-decision-making/councillors/ &quot;&gt;Huntingdonshire District Council&lt;/a&gt;,
+&lt;a href=&quot;https://scambs.moderngov.co.uk/mgMemberIndex.aspx?bcr=1 &quot;&gt;South Cambridgeshire District Council&lt;/a&gt;,
+&lt;a href=&quot;https://democracy.cambridge.gov.uk/mgCommitteeDetails.aspx?ID=175 &quot;&gt;Cambridge City Council&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;figure&gt;&lt;img src=&quot;/assets/local-government-in-england/9-combined-authority.svg&quot; /&gt;&lt;figcaption class=&quot;maincolumn-figure&quot;&gt;While the Liverpool City Region Combined Authority is made up of metropolitan boroughs and the Halton unitary authority
+&lt;br /&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.liverpoolcityregion-ca.gov.uk/governance/elected-members/ &quot;&gt;Liverpool City Region Combined Authority&lt;/a&gt;:
+&lt;a href=&quot;http://councillors.knowsley.gov.uk/mgmemberindex.aspx?bcr=1 &quot;&gt;Knowsley Council&lt;/a&gt;,
+&lt;a href=&quot;https://modgov.sefton.gov.uk/mgMemberIndex.aspx?bcr=1 &quot;&gt;Sefton Council&lt;/a&gt;,
+&lt;a href=&quot;https://www.sthelens.gov.uk/council/councillors-elections-voting/find-your-local-councillor/ &quot;&gt;St Helens Council&lt;/a&gt;,
+&lt;a href=&quot;https://liverpool.gov.uk/council/councillors-and-committees/mayor-of-liverpool/ &quot;&gt;Liverpool City Council&lt;/a&gt;,
+&lt;a href=&quot;https://www.wirral.gov.uk/councillors-and-committees/councillors &quot;&gt;Wirral Council&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;figure&gt;&lt;img src=&quot;/assets/local-government-in-england/10-combined-authority.svg&quot; /&gt;&lt;figcaption class=&quot;maincolumn-figure&quot;&gt;All metropolitan districts are now part of a Combined Authority, meaning in-practice that they are part of a two-tier system
+&lt;br /&gt;&lt;br /&gt;
+&lt;a href=&quot;https://governance.sheffieldcityregion.org.uk/mgCommitteeDetails.aspx?ID=137 &quot;&gt;Sheffield City Region Combined Authority&lt;/a&gt;,
+&lt;a href=&quot;https://www.greatermanchester-ca.gov.uk/who-we-are/leaders/ &quot;&gt;Greater Manchester Combined Authority&lt;/a&gt;,
+&lt;a href=&quot;https://www.wmca.org.uk/who-we-are/ &quot;&gt;West Midlands Combined Authority&lt;/a&gt;,
+&lt;a href=&quot;https://www.westyorks-ca.gov.uk/about-us/governance-and-transparency/ &quot;&gt;West Yorkshire Combined Authority&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;Below all of these boroughs and counties and authorities is the civil parish. These are optional, and most of the population is not part of one. They have a range of hyper-local functions and can vary dramatically depending on their situation.&lt;/p&gt;
+
+&lt;figure&gt;&lt;img src=&quot;/assets/local-government-in-england/11-civil-parish.svg&quot; /&gt;&lt;figcaption class=&quot;maincolumn-figure&quot;&gt;The unitary authority of Herefordshire Council is fully covered with civil parishes. Just to make it a bit more convoluted, the parishes can group together, with three perishes grouping to form the Brockhampton Group Parish Council
+&lt;br /&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.herefordshire.gov.uk/parish-councils-1/parish-councils/7 &quot;&gt;Herefordshire Parish Councils&lt;/a&gt;,
+&lt;a href=&quot;https://brockhamptongrouppc.org.uk/ &quot;&gt;Brockhampton Group Parish Council&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;figure&gt;&lt;img src=&quot;/assets/local-government-in-england/12-civil-parish.svg&quot; /&gt;&lt;figcaption class=&quot;maincolumn-figure&quot;&gt;The Borough of Burnley sits under Lancashire County Council and most of the land is part of a parish council. However, the main population centre of Burnley is unparished
+&lt;br /&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.burnley.gov.uk/about-council/parish-town-county-council &quot;&gt;Burnley Council&lt;/a&gt;,
+&lt;a href=&quot;https://burnley.moderngov.co.uk/mgParishCouncilDetails.aspx?bcr=1 &quot;&gt;Burnley Parish Councils&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;Each level of government shares power, but different areas have different local governments.&lt;/p&gt;
+
+&lt;figure&gt;&lt;img src=&quot;/assets/local-government-in-england/13-levels-of-government.svg&quot; /&gt;&lt;figcaption class=&quot;maincolumn-figure&quot;&gt;Somebody in the Cambridgeshire and Peterborough Combined Authority could be inside of the Combined Authority, the Cambridgeshire County Council, Huntingdonshire District Council, and finally the Holme civil parish. This is the most extreme example, showing power shared between four layers of local government under Westminster&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;figure&gt;&lt;img src=&quot;/assets/local-government-in-england/14-levels-of-government.svg&quot; /&gt;&lt;figcaption class=&quot;maincolumn-figure&quot;&gt;On the opposite end, a unitary district with no parishes such as Brighton and Hove has only a single level of local government responsible for all services in the area&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;power-sharing&quot;&gt;Power Sharing&lt;/h2&gt;
+
+&lt;p&gt;Next, how power is shared between the different levels of local government.&lt;/p&gt;
+
+&lt;h3 id=&quot;county-district&quot;&gt;County-District&lt;/h3&gt;
+
+&lt;p&gt;Shared Powers&lt;label for=&quot;mn-county-district-shared&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;mn-county-district-shared&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;In the county-district two-tier system, most powers are allocated to one of the authorities. However, some powers are shared
+&lt;br /&gt;&lt;br /&gt;
+&lt;a href=&quot;https://commonslibrary.parliament.uk/research-briefings/sn07104/ &quot;&gt;Local government in England: structures&lt;/a&gt; &lt;/span&gt;:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Arts and recreation&lt;/li&gt;
+  &lt;li&gt;Economic development&lt;/li&gt;
+  &lt;li&gt;Museums and galleries&lt;/li&gt;
+  &lt;li&gt;Parking&lt;/li&gt;
+  &lt;li&gt;Planning&lt;/li&gt;
+  &lt;li&gt;Tourism&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;County (Upper) Powers&lt;label for=&quot;mn-county-district-separate&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;mn-county-district-separate&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;The other powers are handled by either the county, or the district. In other systems, the unitary authority, metropolitan borough, or London borough have all of these powers &lt;/span&gt;:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Births, deaths, marriage&lt;/li&gt;
+  &lt;li&gt;Children’s services&lt;/li&gt;
+  &lt;li&gt;Concessionary travel&lt;/li&gt;
+  &lt;li&gt;Consumer protection&lt;/li&gt;
+  &lt;li&gt;Education&lt;/li&gt;
+  &lt;li&gt;Emergency Planning&lt;/li&gt;
+  &lt;li&gt;Highways, street lighting, traffic management&lt;/li&gt;
+  &lt;li&gt;Libraries&lt;/li&gt;
+  &lt;li&gt;Minerals and waste planning&lt;/li&gt;
+  &lt;li&gt;Buses and transport planning&lt;/li&gt;
+  &lt;li&gt;Public health&lt;/li&gt;
+  &lt;li&gt;Social services&lt;/li&gt;
+  &lt;li&gt;Trading standards&lt;/li&gt;
+  &lt;li&gt;Waste disposal&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;District (Lower) Powers:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Building regulations&lt;/li&gt;
+  &lt;li&gt;Burials and cremations&lt;/li&gt;
+  &lt;li&gt;Coastal protection&lt;/li&gt;
+  &lt;li&gt;Community safety&lt;/li&gt;
+  &lt;li&gt;Council tax and business rates&lt;/li&gt;
+  &lt;li&gt;Elections and electoral registration&lt;/li&gt;
+  &lt;li&gt;Environmental health&lt;/li&gt;
+  &lt;li&gt;Housing&lt;/li&gt;
+  &lt;li&gt;Licensing&lt;/li&gt;
+  &lt;li&gt;Markets and fairs&lt;/li&gt;
+  &lt;li&gt;Public conveniences&lt;/li&gt;
+  &lt;li&gt;Sports centres, parks, playing fields&lt;/li&gt;
+  &lt;li&gt;Street cleaning&lt;/li&gt;
+  &lt;li&gt;Waste collection and recycling&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;combined-authority&quot;&gt;Combined Authority&lt;/h3&gt;
+
+&lt;p&gt;Potentially-Shared Powers&lt;label for=&quot;mn-combined-authority&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;mn-combined-authority&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;Each combined authority is created with specific powers that are negotiated uniquely, with the only power available to all authorities is to promote education and training. Powers may be shared between the constituent councils, or granted solely to the combined authority
+&lt;br /&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.instituteforgovernment.org.uk/charts/distribution-powers-among-local-authorities-uk &quot;&gt;Distribution of powers among local authorities in the UK&lt;/a&gt; &lt;/span&gt;:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Children’s services&lt;/li&gt;
+  &lt;li&gt;Community safety&lt;/li&gt;
+  &lt;li&gt;Council tax and business rates&lt;/li&gt;
+  &lt;li&gt;Economic development&lt;/li&gt;
+  &lt;li&gt;Education and skills&lt;/li&gt;
+  &lt;li&gt;Highways and roads&lt;/li&gt;
+  &lt;li&gt;Housing&lt;/li&gt;
+  &lt;li&gt;Planning&lt;/li&gt;
+  &lt;li&gt;Public health&lt;/li&gt;
+  &lt;li&gt;Social care&lt;/li&gt;
+  &lt;li&gt;Transport&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;civil-parish&quot;&gt;Civil Parish&lt;/h3&gt;
+
+&lt;p&gt;Potentially-Shared Powers&lt;label for=&quot;mn-civil-parish&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;mn-civil-parish&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;The Civil Parish can be responsible for a large range of powers as they can cover whole cities or villages of only a hundred people. The smallest parishes may provide a small square in the centre of a village and be consulted on local planning decisions by the higher tiers of government. While a parish covering a city may provide a large range of parks and community centres, and contribute to planning the local public transport
+&lt;br /&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.gov.uk/understand-how-your-council-works &quot;&gt;Understand how your council works&lt;/a&gt; &lt;/span&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Planning consultation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Provide:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Allotments&lt;/li&gt;
+  &lt;li&gt;Public clocks&lt;/li&gt;
+  &lt;li&gt;Bus shelters&lt;/li&gt;
+  &lt;li&gt;Community centres&lt;/li&gt;
+  &lt;li&gt;Play areas and equipment&lt;/li&gt;
+  &lt;li&gt;Local grants&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Issue fines for:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Litter&lt;/li&gt;
+  &lt;li&gt;Graffiti&lt;/li&gt;
+  &lt;li&gt;Fly posting&lt;/li&gt;
+  &lt;li&gt;Dog offences&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;decision-making&quot;&gt;Decision Making&lt;/h2&gt;
+
+&lt;p&gt;Councils are democratic institutions and councillors are elected to make decisions. They are unpaid and can only claim an allowance for time spent on duty and the associated costs. Each council decides under which framework it operates, which may be through consensus or through a leader&lt;label for=&quot;mn-decision-making&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;mn-decision-making&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;&lt;a href=&quot;https://www.londoncouncils.gov.uk/how-are-councils-structured&quot;&gt;How are councils structured?&lt;/a&gt; &lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;The leader and cabinet system uses the whole council to elect a councillor to undertake most decisions. They select a cabinet, as well as a deputy leader.&lt;/p&gt;
+
+&lt;p&gt;This system is more suited to councils where a party can secure a majority, to ensure that they can choose a leader, and as other groups are left out of decision making. They also must include an overview and scrutiny committee, made up of councillors representing the strength of the whole council.&lt;/p&gt;
+
+&lt;figure&gt;&lt;img src=&quot;/assets/local-government-in-england/21-leader-and-cabinet.svg&quot; /&gt;&lt;figcaption class=&quot;maincolumn-figure&quot;&gt;South Tyneside council has a large Labour majority, so they have control over selecting the leader and still have a large majority on the representative committee
+&lt;br /&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.southtyneside.gov.uk/article/60211/List-of-councillors-by-ward &quot;&gt;South Tyneside Council&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;The committee system uses representative committees to run the council. A leader is elected from the full council, but they are primarily a figurehead for the council. They chair a committee, which includes all groups.&lt;/p&gt;
+
+&lt;figure&gt;&lt;img src=&quot;/assets/local-government-in-england/22-committee.svg&quot; /&gt;&lt;figcaption class=&quot;maincolumn-figure&quot;&gt;In this case, a deputy leader was appointed as the leader requires a coalition. The deputy leader also serves as a committee chair, but this is not required.
+
+Different committees are responsible for different areas, such as the Policy and Resources Committee, the Democracy and General Purposes Committee, or the Planning Committee.
+&lt;br /&gt;&lt;br /&gt;
+&lt;a href=&quot;https://maidstone.gov.uk/home/primary-services/council-and-democracy/primary-areas/your-councillors &quot;&gt;Maidstone Borough Council&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;In a mayoral system, a mayor is directly elected instead of being chosen from the councillors. They are a member of the council and appoint other councillors to be deputy and assistant mayors.&lt;/p&gt;
+
+&lt;p&gt;Like the leader system, a representative Audit and Risk Committee is used to hold the executive accountable.&lt;/p&gt;
+
+&lt;figure&gt;&lt;img src=&quot;/assets/local-government-in-england/23-mayoral.svg&quot; /&gt;&lt;figcaption class=&quot;maincolumn-figure&quot;&gt;The Leicester City Council has an overwhelmingly strong Labour majority of councillors, so their audit and risk committee’s proportional representation means it is still made up fully of Labour councillors, though they cannot be part of the executive.
+&lt;br /&gt;&lt;br /&gt;
+&lt;a href=&quot;http://www.cabinet.leicester.gov.uk:8071/mgMemberIndex.aspx &quot;&gt;Leicester City Council&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;figure&gt;&lt;img src=&quot;/assets/local-government-in-england/24-gla.svg&quot; /&gt;&lt;figcaption class=&quot;maincolumn-figure&quot;&gt;The GLA is similar to a mayoral system, but with a clearer divide between the Assembly and the executive. The elected mayor appoints deputy mayors, but they cannot be both a deputy mayor and member of the Assembly.&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;Again, each combined authority has a slightly different system. Most have a mayor, but the North East CA is the only one without. The cabinets are filled with councillors from the constituent councils that make up the combined authority.&lt;/p&gt;
+
+&lt;figure&gt;&lt;img src=&quot;/assets/local-government-in-england/25-combined-authority.svg&quot; /&gt;&lt;figcaption class=&quot;maincolumn-figure&quot;&gt;For example, the two highest ranking - mayor or leader and deputy - are sent to the North of Tyne cabinet, with one of them serving as the mayor’s deputy, and the leader of each of the four councils make up the North East CA cabinet.
+
+Combined authorities also use committees, including a scrutiny committee. These neighboring authorities also have a joint committee to manage the local transport system.
+&lt;br /&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.northoftyne-ca.gov.uk/who-we-are/the-cabinet/ &quot;&gt;North of Tyne Combined Authority&lt;/a&gt;,
+&lt;a href=&quot;https://northeastca.gov.uk/decision-making/ &quot;&gt;North East Combined Authority&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;elections&quot;&gt;Elections&lt;/h2&gt;
+
+&lt;p&gt;Finally how councillors are elected varies slightly, and how the voting works for them and directly-elected mayors.&lt;/p&gt;
+
+&lt;p&gt;The most common type of election is the whole council election. Every four years, these councils will hold elections for all of their councillors. The council area is split up into electoral wards, and these may elect a varying number of councillors. So more rural areas may elect only a single councillor, but more densely populated wards can elect more councillors.&lt;/p&gt;
+
+&lt;figure&gt;&lt;img src=&quot;/assets/local-government-in-england/27-fptp.svg&quot; /&gt;&lt;figcaption class=&quot;maincolumn-figure&quot;&gt;In Bolsover District Council: one, two, or three councillors are elected in each ward
+&lt;br /&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.bolsover.gov.uk/index.php?option=com_content&amp;amp;view=article&amp;amp;id=72 &quot;&gt;Bolsover District Council&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;The elections use a first past the post system, where the candidate with the highest number of votes is elected, but when multiple seats are available, each voter gets to vote for as many candidates as seats are available, sometimes called a bloc vote. So if three seats are available, a voter is able to vote for up to three candidates. Parties try to field as many candidates as seats available, and this voting system favours the majority, leading to landslide results.&lt;/p&gt;
+
+&lt;figure&gt;&lt;img src=&quot;/assets/local-government-in-england/28-fptp.svg&quot; /&gt;&lt;figcaption class=&quot;maincolumn-figure&quot;&gt;For this election in the Balborough ward, two councillors were to be elected. The two Conservative candidates got about fifty more votes each than the Labour candidates leading both of them to be elected. In this system, it is unlikely that the winner got a majority of votes, or that it is representative of all voters. The conservative voters won two seats, a slightly smaller labour voter group got zero&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;The next most common system is to elect the council by thirds. This is usually setup to work on a four year cycle, with one third of councillors elected per year, but missing out one year for the full county council election.&lt;/p&gt;
+
+&lt;figure&gt;&lt;img src=&quot;/assets/local-government-in-england/29-fptp.svg&quot; /&gt;&lt;figcaption class=&quot;maincolumn-figure&quot;&gt;Welwyn Hatfield council is setup with three councillors in each ward, one elected every election year
+&lt;br /&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.welhat.gov.uk &quot;&gt;Welwyn Hatfield Borough Council&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;The final and rarest way of electing a council is to elect the council by halves.&lt;/p&gt;
+
+&lt;figure&gt;&lt;img src=&quot;/assets/local-government-in-england/30-fptp.svg&quot; /&gt;&lt;figcaption class=&quot;maincolumn-figure&quot;&gt;In Hastings, all wards have two councillors, with one elected every two years
+&lt;br /&gt;&lt;br /&gt;
+&lt;a href=&quot;https://hastings.moderngov.co.uk/mgManageElectionResults.aspx?bcr=1 &quot;&gt;Welwyn Hastings Borough Council&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;For elected mayors of Combined Authorities, councils and the London Mayor, the supplementary vote method is used. Voters select both a first and second preference of candidates. If no candidate gets a majority of first preference, the two with the highest number of first preference votes go onto a second round, and other candidates are eliminated. The eliminated candidates’ voters second preferences can then be used as votes between the remaining two, with the winner having the most votes after the second round.&lt;/p&gt;
+
+&lt;figure&gt;&lt;img src=&quot;/assets/local-government-in-england/31-supplementary.svg&quot; /&gt;&lt;figcaption class=&quot;maincolumn-figure&quot;&gt;Here, the Labour and Conservative candidates got the two most votes, so the other candidates are eliminated. The second preference votes are then added, which keeps the Labour candidate in the lead, causing them to be elected
+&lt;br /&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.northoftyne-ca.gov.uk/the-mayor/mayoral-election-results/ &quot;&gt;North of Tyne Combined Authority Mayoral Election Results&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+</description>
+        <pubDate>Wed, 17 Mar 2021 14:48:00 +0000</pubDate>
+        <link>/articles/2021-03-17/local-government-in-england</link>
+        <guid isPermaLink="true">/articles/2021-03-17/local-government-in-england</guid>
+        
+        
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Elections in the United Kingdom</title>
+        <description>&lt;p&gt;&lt;span class=&quot;newthought&quot;&gt;Each level of government&lt;/span&gt;  in the UK has a different electoral system. Here, each system will be looked at individually; covering the voting system and what effects this causes for the result.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;The systems covered:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;UK Parliament&lt;/li&gt;
+  &lt;li&gt;Greater London Authority&lt;/li&gt;
+  &lt;li&gt;Scottish Parliament&lt;/li&gt;
+  &lt;li&gt;Welsh Parliament&lt;/li&gt;
+  &lt;li&gt;Northern Ireland Assembly&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The lower-level systems will also be covered&lt;label for=&quot;mn-council&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;mn-council&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;Although probably not in as much detail, as each nation of the UK uses different systems, and in England different systems can be used for each council &lt;/span&gt;:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Directly-Elected Mayors&lt;/li&gt;
+  &lt;li&gt;Councils&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;uk-parliament&quot;&gt;UK Parliament&lt;/h2&gt;
+
+&lt;p&gt;The UK Parliament &lt;label for=&quot;mn-ukparl&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;mn-ukparl&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;AKA Westminster &lt;/span&gt; is made up of two houses, the Lords and the Commons. The House of Commons is elected and is made up of representatives from across the whole of the United Kingdom. The House of Lords is less powerful, but is mostly made up appointed members.&lt;/p&gt;
+
+&lt;h3 id=&quot;house-of-commons&quot;&gt;House of Commons&lt;/h3&gt;
+
+&lt;p&gt;The biggest elections in the UK are held for the House of Commons. The country is split up into 650 constituences, which are each represented by a member of Parliament (MP). In general elections, which must be held within 5 years of the previous&lt;label for=&quot;mn-ge&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;mn-ge&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;Elections are scheduled for the first Thursday in May for a maximum of a 5-year parliament, although elections can be called earlier &lt;/span&gt;, an election takes place in each constituency to elect their MP.&lt;/p&gt;
+
+&lt;p&gt;These elections are held using a method called first past the post (FPTP). Each voter has a single vote they use for a single candidate. Simply, the candidate with the most votes wins.&lt;/p&gt;
+
+&lt;p&gt;Winning candidates almost always belong to a political party, and the party that wins the the most seats usually forms the Government.&lt;/p&gt;
+
+&lt;p&gt;This system usually results in a party getting a majority of seats without a majority of the votes, leading to them not usually needing votes from other parties in a coalition or confidence and supply arrangement, a majoritarian system.&lt;/p&gt;
+
+&lt;h3 id=&quot;house-of-lords&quot;&gt;House of Lords&lt;/h3&gt;
+
+&lt;p&gt;Although never referred to as a democratic system, the House of Lords does currently hold elections in limited circumstances&lt;label for=&quot;mn-hol&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;mn-hol&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;And not very democratic ones &lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;These elections are only held for the now-limited number of hereditary peers. The previous system allowed for all of these peers to enter the Lords, but this was limited to 90. When a hereditary member of the House of Lords dies or retires, their seat is put up for election.&lt;/p&gt;
+
+&lt;p&gt;However, candidates must be a willing hereditary peer and the only voters are other hereditary peers from a grouping&lt;label for=&quot;mn-hereditary&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;mn-hereditary&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;These groupings are three major parties and non-party affiliated, as well as some elected by the whole House &lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;Uniquely in the UK, the alternative vote, or preferential vote, system is used. This involves the voters ranking the candidates from best to worst. To decide the winner, a candidate needs to get a majority of votes. Votes are first given to the number one choice for each voter, but each round the lowest preferred candidate is eliminated and their voters’ choice is given to their next most-preferred.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;greater-london-assembly&quot;&gt;Greater London Assembly&lt;/h2&gt;
+
+&lt;p&gt;The GLA is made up of an executive mayor, and an assembly that holds them to account. Voters must live in London, and can vote for the mayor, a local assembly representative, and contribute to the overall makeup of the assembly.&lt;/p&gt;
+
+&lt;h3 id=&quot;mayor-of-london&quot;&gt;Mayor of London&lt;/h3&gt;
+
+&lt;p&gt;The mayor is elected using the supplementary vote system. This is the same as the previous, alternative vote, but voters only get to choose their top two preferences.&lt;/p&gt;
+
+&lt;p&gt;Simply, a voter selects a favourite candidate, and can pick a second preference. If no candidate has a majority of votes, all but the top two candidates are eliminated. If these eliminated candidate’s voters selected a second preference, their vote is switched. The remaining candidate with the most votes wins.&lt;/p&gt;
+
+&lt;p&gt;This system was the base for all directly elected mayors in combined authorities and some councils.&lt;/p&gt;
+
+&lt;h3 id=&quot;london-assembly&quot;&gt;London Assembly&lt;/h3&gt;
+
+&lt;p&gt;The assembly is made up of 25 members that are elected by the additional member system&lt;label for=&quot;mn-lonams&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;mn-lonams&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;AKA mixed-member proportional, due to the two systems used &lt;/span&gt;. Voters have two votes, they vote for their local candidate in one of the fourteen constituences as well as for a political group&lt;label for=&quot;mn-lonassem&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;mn-lonassem&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;Usually a party such as Labour or Conservative &lt;/span&gt;. This second vote aims to create a proportional outcome.&lt;/p&gt;
+
+&lt;p&gt;The constituency vote uses the same FPTP system as a UK-wide general election. The candidate with the most votes wins, and the party of the winner is also important.&lt;/p&gt;
+
+&lt;p&gt;The londonwide party vote is used to calculate how many extra members should be elected from each party. The D’Hondt method is used to allocate the remaining eleven seats, using the number of votes from the party vote, and the results of the constituency vote. This method aims to create a proportional results by giving a remaining seat to the least represented party, which is repeated to fill the eleven seats.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;scottish-parliament&quot;&gt;Scottish Parliament&lt;/h2&gt;
+
+&lt;p&gt;The Scottish Parliament &lt;label for=&quot;mn-scotparl&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;mn-scotparl&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;AKA Holyrood &lt;/span&gt; uses a similar additional member system as the London Assembly, but an executive is elected from the parliament instead of through a seperate direct election.&lt;/p&gt;
+
+&lt;p&gt;This proportional system means that is difficult for a party to gain a majority of the seats, so coalition or confidence and supply arrangements are more common.&lt;/p&gt;
+
+&lt;p&gt;Unlike the London Assembly’s single party list, eight separate regions select their additional members.&lt;/p&gt;
+
+&lt;p&gt;A voter has two votes, firstly electing a single candidate from each of the 73 constituences. Their second vote is for a party in their region. The D’Hondt method is then used for each region, considering the party vote and the results of the constituences in the region to elect seven more members, totalling 129 over the two methods.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;senedd-cymru--welsh-parliament&quot;&gt;Senedd Cymru | Welsh Parliament&lt;/h2&gt;
+
+&lt;p&gt;The Senedd uses the same system as the Scottish Parliament, including the single member constituencies and regional lists.&lt;/p&gt;
+
+&lt;p&gt;The forty constituences and five regions of four members each lead to a total of sixty members.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;northern-ireland-assembly&quot;&gt;Northern Ireland Assembly&lt;/h2&gt;
+
+&lt;p&gt;The Northern Ireland Assembly has a unique election system and governing structure.&lt;/p&gt;
+
+&lt;p&gt;To elect the members, the single transferable vote method is used. Northern Ireland is split into eighteen constituencies, each electing five members. A voter can rank each candidate in order of preference.&lt;/p&gt;
+
+&lt;p&gt;The winners are chosen by reaching a threshold of votes, approximately one sixth of the votes to be elected. Candidates that reach the threshold are elected, and extra votes are distributed to their voters’ next preferences. When no candidates have enough votes, the candidate with the smallest amount of votes is eliminated and their votes redistributed until all seats are filled&lt;label for=&quot;mn-niassembly&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;mn-niassembly&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;If the threshold is not reached, candidates with the most votes are elected &lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;This system results in a proportional result, allowing multiple candidates running for each party without splitting the vote&lt;label for=&quot;mn-nicandidates&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;mn-nicandidates&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;This might not be exactly true &lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;Power is shared between the Unionist and Nationalist blocs, and the D’Hondt method is used to allocate the number of ministers for each party. The mandatory coalition means all large parties can be represented in the government.&lt;/p&gt;
+
+&lt;p&gt;Members must also designate themself as either Nationalist, Unionist, or other, which can be used to force down votes that do not get support from both the Nationalist and Unionist blocs.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 15 Mar 2021 21:46:04 +0000</pubDate>
+        <link>/articles/2021-03-15/elections-in-the-united-kingdom</link>
+        <guid isPermaLink="true">/articles/2021-03-15/elections-in-the-united-kingdom</guid>
+        
+        
+      </item>
+    
   </channel>
 </rss>
